@@ -1,0 +1,26 @@
+[
+  {
+    "id": "MATH-001",
+    "subject": "Mathematics",
+    "topic": "Arithmetic",
+    "question": "What is 7 multiplied by 8?",
+    "questionImage": null,
+    "options": [
+      "54",
+      "56",
+      "64",
+      "72"
+    ],
+    "correctAnswer": 1,
+    "rationale": {
+      "text": "7 multiplied by 8 equals 56.",
+      "images": []
+    },
+    "source": "Example only",
+    "difficulty": "easy",
+    "tags": [
+      "Arithmetic",
+      "Multiplication"
+    ]
+  }
+]
