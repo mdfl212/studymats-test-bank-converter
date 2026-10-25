@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ARITHMETIC-001",
+    "subject": "Mathematics",
+    "topic": "Arithmetic",
+    "question": "What is 7 multiplied by 8?",
+    "questionImage": null,
+    "options": [
+      "54",
+      "56",
+      "64",
+      "72"
+    ],
+    "correctAnswer": 1,
+    "rationale": {
+      "text": "7 multiplied by 8 equals 56.",
+      "images": []
+    },
+    "tags": [
+      "Arithmetic"
+    ]
+  },
+  {
+    "id": "ARITHMETIC-002",
+    "subject": "Mathematics",
+    "topic": "Arithmetic",
+    "question": "Which number is even?",
+    "questionImage": null,
+    "options": [
+      "13",
+      "17",
+      "20",
+      "25"
+    ],
+    "correctAnswer": 2,
+    "rationale": {
+      "text": "20 is divisible by 2 with no remainder.",
+      "images": []
+    },
+    "tags": [
+      "Arithmetic"
+    ]
+  }
+]
