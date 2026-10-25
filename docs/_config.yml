@@ -1,0 +1,5 @@
+title: StudyMats Test Bank Converter
+description: AI-assisted workflow and documentation for converting question banks to StudyMats-compatible JSON.
+markdown: kramdown
+exclude:
+  - assets
