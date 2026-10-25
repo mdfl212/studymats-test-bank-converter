@@ -3,3 +3,61 @@
 @media(max-width:680px){.wrap{width:calc(100% - 32px)}.header-inner{width:calc(100% - 28px);min-height:65px;flex-wrap:wrap;gap:10px;padding:10px 0}.brand-mark{width:34px;height:34px}.top-nav{order:3;width:100%;justify-content:flex-start;gap:20px;overflow-x:auto;padding:2px 0 5px}.top-nav a{white-space:nowrap;font-size:12px}.nav-cta{margin-left:auto;padding:8px 10px;font-size:11px}.hero{grid-template-columns:1fr;gap:32px;padding-top:42px;padding-bottom:53px}.hero h1{font-size:clamp(38px,10vw,52px)}.hero-lede{font-size:15px;margin:18px 0 22px}.hero-card{max-width:500px;margin-inline:auto;width:100%}.floating-label{right:4px;bottom:-14px;font-size:10px}.trust-items{grid-template-columns:1fr;gap:0;padding-block:8px}.trust-items>div{justify-content:flex-start;padding:13px 5px;border-right:0;border-bottom:1px solid var(--line)}.trust-items>div:last-child{border-bottom:0}.trust-items strong{min-width:55px}.section{padding-top:59px;padding-bottom:59px}.section-heading{margin-bottom:26px}.section-heading h2,.download-intro h2{font-size:30px}.steps-grid,.principles-grid{grid-template-columns:1fr}.step-card{padding:21px}.step-number{margin-bottom:15px}.format-grid,.resource-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.format-card{padding:17px 14px}.format-card h3{font-size:15px}.format-card p{font-size:12px}.format-tag{font-size:9px}.download-layout{grid-template-columns:1fr;gap:27px}.download-intro h2{max-width:100%}.download-row{padding:13px}.download-row small{line-height:1.5}.resource-card{padding:16px}.resource-card h3{font-size:14px}.resource-card p{font-size:11px}.footer-inner{flex-wrap:wrap;gap:14px}.footer-inner>p{order:3;width:100%;margin:0}.page-hero{padding:45px 0 38px}.page-hero h1{font-size:clamp(34px,9vw,45px)}.page-hero>div>p:not(.eyebrow){font-size:14px}.tutorial-layout{display:block;padding-top:25px;padding-bottom:60px}.tutorial-nav{position:static;margin-bottom:32px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px}.tutorial-nav p{grid-column:1/-1}.tutorial-nav a{font-size:10px}.tutorial-step h2{font-size:24px}.tutorial-step p,.tutorial-step li{font-size:13px}.schema-mini{grid-template-columns:1fr 1fr}.next-card{align-items:flex-start;flex-direction:column}.next-card .button{white-space:normal}.page-hero-links{flex-wrap:wrap;gap:14px}}
 @media(max-width:390px){.wrap{width:calc(100% - 24px)}.brand-copy small{font-size:10px}.nav-cta{font-size:10px}.hero h1{font-size:36px}.hero-actions .button{width:100%}.format-grid,.resource-grid{grid-template-columns:1fr}.format-card{padding:19px}.tutorial-nav{grid-template-columns:1fr}.mock-content{padding:18px 14px}.code-line{font-size:10px}.download-row{gap:10px}.file-badge{width:34px;height:34px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+
+/* StudyMats brand system: shared mark, editorial typography, forest green + antique gold. */
+:root{
+  --ink:#1a2e1a;--muted:#5c6b5b;--line:#d9d1c2;--surface:#fff;--page:#fbfaf7;
+  --blue:#2d4a2d;--blue-dark:#203820;--navy:#172319;--radius:14px;
+  --shadow:0 16px 42px rgba(29,46,29,.09);
+  font-family:"Source Serif 4",Georgia,serif;
+}
+body{font-family:"Source Serif 4",Georgia,serif;background:#fff;color:var(--ink);line-height:1.7}
+h1,h2,h3,.brand-copy strong,.section-toggle{font-family:"Playfair Display",Georgia,serif;letter-spacing:-.025em}
+.eyebrow,.step-number,.format-tag,.resource-card>span:first-child,.file-badge,.shortcut-kicker,.instruction-head,.tutorial-nav p{font-family:"JetBrains Mono",ui-monospace,monospace;letter-spacing:.07em}
+.site-header{background:rgba(255,255,255,.95);border-bottom:1px solid #d9d1c2}
+.brand{gap:10px}.brand-logo{display:block;width:42px;height:42px;object-fit:contain;flex-shrink:0}
+.brand-mark{background:#2d4a2d}
+.brand-copy strong{font-family:"Playfair Display",Georgia,serif;font-size:17px;letter-spacing:-.02em}
+.brand-copy small{font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:.045em;text-transform:uppercase}
+.top-nav a:hover,.top-nav a[aria-current=page]{color:#947019}
+.nav-cta{border-color:#c9bd9f;color:#2d4a2d}
+.button-primary{background:#2d4a2d;box-shadow:0 7px 18px rgba(45,74,45,.2)}
+.button-primary:hover{background:#203820}
+.button-secondary{border-color:#d8cba9;color:#2d4a2d;background:#fff}
+.eyebrow{color:#92701b;letter-spacing:.12em}
+.status-dot{background:#b38a25;box-shadow:0 0 0 4px #f6f0df}
+.hero h1 span{color:#92701b}
+.section-tint{background:#f8f6f0}
+.section-dark{background:#172319}
+.section-dark .eyebrow{color:#e0c574}
+.format-tag{color:#80651b;background:#f7f0df}
+.step-number{color:#92701b}
+.resource-link{color:#80651b}
+.principle-check{background:#edf3e8;color:#2d6638}
+.callout{background:#faf6e9;border-color:#e7d7ae;color:#655426}
+.note-info{background:#f1f5ee;border-color:#d3dfcc;color:#38563b}
+.note-warning{background:#fff8e7;border-color:#ead7a3;color:#7a5c1d}
+.instruction-card{border-color:#d9d1c2;background:#fbfaf7}
+.instruction-head{border-color:#e7dfd1;color:#64705f}
+.instruction-card pre{color:#344834}
+.tutorial-nav a:hover{background:#f1f4ec;color:#2d4a2d}
+.tutorial-step code,.step-card code{background:#f2f0e9;color:#5d4a19}
+.next-card{border-color:#d9d1c2;background:#faf8f2}
+.app-shortcut{font-weight:750!important;color:#80651b!important}
+.app-links{border-top:1px solid #e6dfd1;border-bottom:1px solid #e6dfd1;background:#fbfaf7;padding:22px 0}
+.app-links-inner{display:grid;grid-template-columns:1.1fr 1fr 1.15fr 1fr;align-items:center;gap:12px}
+.app-links-inner>div:first-child{display:flex;flex-direction:column;gap:3px;padding-right:10px}
+.shortcut-kicker{font-size:9px;font-weight:600;color:#92701b}
+.app-links-inner>div:first-child strong{font-family:"Playfair Display",Georgia,serif;font-size:17px}
+.app-links-inner>div:first-child small{font-size:11px;color:#687364}
+.app-link-card{min-width:0;display:flex;align-items:center;gap:11px;padding:12px;border:1px solid #ded7c8;border-radius:11px;background:#fff;color:#1a2e1a;transition:border-color .15s,transform .15s}
+.app-link-card:hover{border-color:#b38a25;transform:translateY(-1px);text-decoration:none}
+.app-link-card>span:last-child{display:flex;flex-direction:column;min-width:0}
+.app-link-card strong{font-family:"Playfair Display",Georgia,serif;font-size:13px;line-height:1.25}
+.app-link-card small{margin-top:3px;color:#687364;font-size:10px;line-height:1.35}
+.app-link-icon{display:grid;place-items:center;flex:0 0 34px;width:34px;height:34px;border-radius:9px;background:#edf1e7;color:#2d4a2d;font-family:"JetBrains Mono",monospace;font-size:11px;font-weight:600}
+.footer-brand .brand-logo{width:36px;height:36px}
+.site-footer{border-top:1px solid #d9d1c2}
+@media(max-width:1000px){.app-links-inner{grid-template-columns:repeat(3,minmax(0,1fr))}.app-links-inner>div:first-child{grid-column:1/-1;padding-bottom:4px}.top-nav{gap:13px}.top-nav a{font-size:12px}}
+@media(max-width:680px){.app-links-inner{grid-template-columns:1fr}.app-links-inner>div:first-child{grid-column:auto;margin-bottom:5px}.app-link-card{padding:11px 13px}.brand-logo{width:36px;height:36px}.brand-copy strong{font-size:16px}.app-shortcut{display:inline-flex!important}}
