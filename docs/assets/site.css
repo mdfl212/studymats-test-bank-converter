@@ -156,12 +156,27 @@ html.embedded-in-studymats .card{
 /* Embedded StudyMats proportional scale: keep converter and tutorial UI at 67%. */
 @media(max-width:760px){
   html.embedded-in-studymats main{
-    width:149.254%;
-    max-width:none;
+    /* Shrink the UI without widening its layout past the iframe viewport. */
+    width:100%;
+    max-width:100%;
     zoom:.67;
     box-sizing:border-box;
+    overflow-wrap:anywhere;
   }
   html.embedded-in-studymats main .wrap{
+    width:100%;
     max-width:100%;
+    min-width:0;
+  }
+  html.embedded-in-studymats .hero,
+  html.embedded-in-studymats .page-hero,
+  html.embedded-in-studymats .hero-card,
+  html.embedded-in-studymats .mock-window,
+  html.embedded-in-studymats .floating-label{
+    min-width:0;
+    max-width:100%;
+  }
+  html.embedded-in-studymats .hero{
+    grid-template-columns:minmax(0,1fr);
   }
 }
