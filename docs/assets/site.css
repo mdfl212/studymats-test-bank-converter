@@ -112,3 +112,42 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
   .nav-cta{font-size:10px;padding:7px}
   .top-nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:3px 10px}
 }
+
+
+/* Embedded StudyMats app view: remove the converter's own site chrome when hosted inside the app iframe. */
+html.embedded-in-studymats,html.embedded-in-studymats body{
+  width:100%;
+  max-width:100%;
+  overflow-x:clip;
+}
+html.embedded-in-studymats .site-header,
+html.embedded-in-studymats .site-footer{
+  display:none!important;
+}
+html.embedded-in-studymats .wrap{
+  width:100%;
+  max-width:100%;
+  padding-left:clamp(14px,3vw,28px);
+  padding-right:clamp(14px,3vw,28px);
+}
+html.embedded-in-studymats main,
+html.embedded-in-studymats section,
+html.embedded-in-studymats .hero,
+html.embedded-in-studymats .card{
+  min-width:0;
+  max-width:100%;
+}
+@media(max-width:680px){
+  html.embedded-in-studymats main{
+    padding-top:12px;
+  }
+  html.embedded-in-studymats h1{
+    font-size:clamp(30px,7.4vw,42px);
+    line-height:1.06;
+    overflow-wrap:anywhere;
+  }
+  html.embedded-in-studymats p{
+    font-size:clamp(14px,3.8vw,17px);
+    line-height:1.5;
+  }
+}
