@@ -151,3 +151,17 @@ html.embedded-in-studymats .card{
     line-height:1.5;
   }
 }
+
+
+/* Embedded StudyMats proportional scale: keep converter and tutorial UI at 67%. */
+@media(max-width:760px){
+  html.embedded-in-studymats main{
+    width:149.254%;
+    max-width:none;
+    zoom:.67;
+    box-sizing:border-box;
+  }
+  html.embedded-in-studymats main .wrap{
+    max-width:100%;
+  }
+}
