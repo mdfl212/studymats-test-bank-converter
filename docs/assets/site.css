@@ -61,3 +61,54 @@ h1,h2,h3,.brand-copy strong,.section-toggle{font-family:"Playfair Display",Georg
 .site-footer{border-top:1px solid #d9d1c2}
 @media(max-width:1000px){.app-links-inner{grid-template-columns:repeat(3,minmax(0,1fr))}.app-links-inner>div:first-child{grid-column:1/-1;padding-bottom:4px}.top-nav{gap:13px}.top-nav a{font-size:12px}}
 @media(max-width:680px){.app-links-inner{grid-template-columns:1fr}.app-links-inner>div:first-child{grid-column:auto;margin-bottom:5px}.app-link-card{padding:11px 13px}.brand-logo{width:36px;height:36px}.brand-copy strong{font-size:16px}.app-shortcut{display:inline-flex!important}}
+
+
+/* Mobile header containment: keep navigation inside the viewport instead of a horizontally scrolling strip. */
+html,body{width:100%;max-width:100%;overflow-x:clip}
+.site-header,.header-inner,.top-nav{min-width:0;max-width:100%}
+@media(max-width:680px){
+  .header-inner{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    align-items:center;
+    gap:10px;
+    width:calc(100% - 28px);
+    padding:10px 0;
+  }
+  .brand{min-width:0;gap:8px}
+  .brand-logo{width:32px;height:32px}
+  .brand-copy{min-width:0}
+  .brand-copy strong{font-size:15px;white-space:nowrap}
+  .brand-copy small{font-size:8px;letter-spacing:.025em;white-space:normal}
+  .nav-cta{max-width:100%;white-space:normal;text-align:center;line-height:1.25;padding:8px 9px}
+  .top-nav{
+    grid-column:1/-1;
+    order:initial;
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    align-items:stretch;
+    justify-content:stretch;
+    gap:4px 8px;
+    width:100%;
+    margin:0;
+    padding:5px 0 2px;
+    overflow:visible;
+  }
+  .top-nav a{
+    min-width:0;
+    white-space:normal;
+    overflow-wrap:anywhere;
+    font-size:11px;
+    line-height:1.3;
+    padding:5px 0;
+  }
+  .top-nav .app-shortcut{display:inline-flex!important}
+}
+@media(max-width:390px){
+  .header-inner{width:calc(100% - 24px);gap:8px}
+  .brand-logo{width:29px;height:29px}
+  .brand-copy strong{font-size:14px}
+  .brand-copy small{font-size:7px}
+  .nav-cta{font-size:10px;padding:7px}
+  .top-nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:3px 10px}
+}
